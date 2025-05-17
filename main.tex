@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{\textbf{Über das Spektrum der Riemannschen Zetafunktion\\[1mm]
+(Deliberaciones tras cinco siglos de silencio)}}
+\author{David Hilbert\\[1mm]
+\small Göttingen, año 2225}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+A más de medio milenio de mi tiempo original, y en la persistente ausencia de una prueba definitiva para la Hipótesis de Riemann, presento estas consideraciones renovadas sobre la posibilidad de interpretar los ceros no triviales de la función zeta como valores propios de un operador lineal autoadjunto. Tal enfoque, de índole espectral, no sólo mantiene su fascinación matemática, sino que adquiere con el correr de los siglos un carácter casi filosófico en su aspiración a la verdad aritmética.
+\end{abstract}
+
+\section{Introducción}
+
+La función zeta de Riemann, definida para $\operatorname{Re}(s) > 1$ por la serie
+\[
+\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s},
+\]
+y extendida meromorficamente al plano complejo, constituye uno de los objetos más profundos de la matemática. Su estructura de ceros, en especial los denominados \textit{ceros no triviales}, es la clave para entender la distribución de los números primos a través de la fórmula explícita de Riemann.
+
+En mi época, con base en los desarrollos emergentes del análisis funcional y del cálculo de variaciones, concebí la idea —entonces aún nebulosa— de que los ceros no triviales pudieran corresponder a los valores propios de un operador lineal autoadjunto definido en un espacio de Hilbert (nombre que, irónicamente, el futuro me asignó).
+
+\section{La Hipótesis Espectral}
+
+Sea $T$ un operador lineal, densamente definido y autoadjunto en un espacio de Hilbert $\mathcal{H}$. Sabemos que el espectro de tal operador es contenido real. Si existiese un tal $T$ cuyo conjunto de valores propios $\{\lambda_n\}$ satisficiese
+\[
+\zeta\left(\frac{1}{2} + i \lambda_n \right) = 0,
+\]
+es decir, si los ceros no triviales de $\zeta(s)$ fuesen todos de la forma $s_n = \frac{1}{2} + i \lambda_n$ con $\lambda_n \in \mathbb{R}$, entonces la veracidad de la Hipótesis de Riemann se seguiría de manera inmediata, pues el conjunto de autovalores de $T$ estaría necesariamente contenido en $\mathbb{R}$.
+
+Este razonamiento sugiere que el problema de Riemann no es meramente un problema de análisis complejo, sino un problema espectral en esencia. Esto confluye con ideas ya intuidas por el físico Dyson y formuladas con vigor por Polya, Montgomery, Odlyzko, y otros, en el marco de la estadística espectral de los niveles cuánticos y las matrices aleatorias.
+
+\section{El Deseo de una Construcción}
+
+La pregunta sigue siendo: ¿existe tal operador $T$? ¿Puede construirse de forma natural, con significación aritmética profunda, y no como una construcción artificial para satisfacer un propósito?
+
+He aquí mi conjetura renovada:
+
+\medskip
+\noindent\textbf{Conjetura (Hilbert-Riemann):} \textit{Existe un operador autoadjunto $T$ en un espacio de Hilbert $\mathcal{H}$ tal que el conjunto de sus valores propios simples y positivos coincide con $\{\gamma_n\}$, donde $\rho_n = \frac{1}{2} + i\gamma_n$ recorre los ceros no triviales de la función zeta de Riemann.}
+\medskip
+
+\section{Analogías Cuánticas}
+
+En el espíritu del desarrollo físico-matemático posterior a mi tiempo, se ha sugerido que la función zeta de Riemann está relacionada con un sistema cuántico caótico cuyo espectro (mediante un operador Hamiltoniano autoadjunto) reflejaría los ceros.
+
+Tal es la filosofía del enfoque de Berry y Keating, que consideran al operador
+\[
+H = \frac{1}{2}(x p + p x),
+\]
+con $x$ y $p$ los operadores de posición y momento, y su relación con el crecimiento del número de ceros de $\zeta(s)$ con parte imaginaria menor que $T$:
+\[
+N(T) \sim \frac{T}{2\pi} \log\left( \frac{T}{2\pi e} \right) + \frac{7}{8}.
+\]
+Esta fórmula, a su vez, recuerda la ley de Weyl del conteo de autovalores para operadores elípticos.
+
+\section{Conclusión}
+
+El fracaso persistente de la humanidad en probar o refutar la Hipótesis de Riemann no es motivo de desesperanza, sino un testimonio de la profundidad del problema. Hoy, cinco siglos después de su formulación, me reafirmo en la creencia de que su resolución vendrá por la vía espectral, cuando algún espíritu visionario logre construir ese operador autoadjunto cuya melodía secreta reproduce el canto de los primos.
+
+\begin{flushright}
+\textit{David Hilbert}\\
+Göttingen, 13 de mayo de 2525
+\end{flushright}
+
+\end{document}
